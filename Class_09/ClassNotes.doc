@@ -1,0 +1,59 @@
+Http request flow in Django Application.
+
+Django Port: It's a communication of Django to the server.
+
+# Various Practice Application:
+
+1. Write Django Application just to send Helloworld message as response.
+
+2. Write Django application to send server time as response
+
+3. Single application with multiple views
+
+-------------------------------------------------------------------------------
+
+Steps to develop Template Based Application
+
+1) Creation of Project:
+
+django-admin startproject template Project
+
+2) Creation of Application:
+
+py manage.py startapp testApp
+
+3) Add this application to the project in settings.py file, so that Django aware of application
+
+4) Create a 'templates' folder inside main project folder.
+
+In that templates folder create a seperate folder named with testApp to hold that particular application specific templates.
+
+5) Add templates folder to settings.py file so that Django can aware of our templates.
+
+TEMPLATES = [
+
+{
+
+'DIRS': ['D:\djangoprojects\ template Project\templates'],
+
+}]
+
+Create html file inside
+
+template Project/templates/testApp folder. This html file is nothing but template.
+
+-------------------------------------------------------------------------------
+
+Working with Models and Databases
+
+Database Configuration
+
+DATABASES = {
+
+'default': {
+
+'ENGINE': 'django.db.backends.sqlite3',
+
+'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+
+}

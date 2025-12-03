@@ -1,0 +1,14 @@
+select orderID.orderID,
+Customer.customerID,
+INNER join customer on orders.orderID = customer.customerID
+
+SELECT customer.customerName, order.orderID from Customer
+
+
+The following SQL statement will select all customers, and any orders they might have:
+
+SELECT customers.customerName, orders.orderID FROM Customer
+LEFT JOIN orders ON customer.customerID = order.customerID
+ORDER BY customers.customerName;
+
+SELECT customers.orderID,customers.LastName,orasdg

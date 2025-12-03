@@ -1,0 +1,45 @@
+Difference b/n the Get and Post Mothod:
+
+
+
+Get is a default method
+it is used for sending data by a url. It is also used for searching data.
+Get is less secure because It maintain data on 
+
+it is faster than Post method.
+It stored upto 2000 characters on url.
+
+
+POST: By using this method we can send unlimited data to the server.
+It is more secured method because it is not stored data on url.
+It is preferable for update, insert and delete operations.
+For fetching data from dhtml control use 
+request.POST.get("name")-for post method
+
+For fetching data from dhtml control use request.GET.get("name") - for get method
+
+******************************************************************************************************************
+                        PROJECT WORK FLOW
+
+project(folder)
+        application(folder)
+                    templates(folder)
+                            reg.html
+                    models.py
+                        class Reg(models.Model)
+                            field
+                    admin.py
+                        reg model
+                    views.py
+                        def reg
+                            getall data from html
+                            user
+urls.py
+    set url
+settings.py
+    set data base
+
+in project folder
+            start command line
+            python manage.py makemigrations
+            python manage.py migrate

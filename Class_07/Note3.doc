@@ -1,0 +1,46 @@
+Web Applications-
+Frame Work:
+            A Frame Work is a structures that you can built software on. It serves as a foundation, so you are not starting entirely from scratch. Frame Works are typically associated with a specific programming.
+
+# Why do we ues frameworks?
+1. using frameworks saves time and reduces the risk of errors. You don't need to write everything   
+
+
+MVC- Model View Controller
+Isse hum communicate karte hai 
+
+
+MVT - Model View Templet
+
+
+Static and Dynaming response:
+
+Every web Applications contains 2 main components
+1. Front-End:
+            It represent what user is seeing on the 
+            websites.
+
+2. Back-End:
+            It is the technology used to decide what to show to the end user on the Front-end
+
+            Back-end is responsible to generate required response to the end user, which is displayed by the Front-end.
+    Back-end has 3 imp components:
+    a, The Language like Java, Python etc.
+    b, The frameworks like Django, Pyramid, Flask etc
+    c, The database like SQLite, oracle, MySQL etc.
+
+Django provides inbuilt database which is nothing but SQLite, which is the best choice for database.
+
+                *******Django's Features********
+Django is a free and open-source websites.
+It is written in Python
+It follows the Model-View-Templet(MVT) architectural pattern
+
+
+Main 5 Features:
+                Fully Loaded:
+                Fast:
+                security:
+                Scalability:
+                Versatile:
+

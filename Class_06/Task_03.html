@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Validation</title>
+    <link rel="stylesheet" href="Task_03.css">
+</head>
+
+<body onload="document.form1.text1.focus()">
+    <div class="mail">
+        <h2>Input an email and submit</h2>
+        <form action="#">
+
+            <input type="text" name="t1" id="">
+            <br><br>
+            <div class="submit">
+                <input type="submit" name="submit" value="submit" , onclick="ValidateEmail(document.form1.t1)">
+            </div>
+
+        </form>
+    </div>
+    <script>
+        function validateEmail(inputText) {
+            var mainFrmt = /^w+([\.-?\w]+)*@w+([\.-]?w+)*(\.\w{2,3})+$/;
+            if (inputText.Value.match(mainFrmt)) {
+                document.form1.t1.focus();
+                return true;
+            }
+            else {
+                alert("you have entered invalid mail");
+                return false;
+            }
+        }
+    </script>
+</body>
+
+</html>

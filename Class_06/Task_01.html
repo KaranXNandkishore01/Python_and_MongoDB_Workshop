@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Password</title>
+    <link rel="stylesheet" href="Task_01.css">
+</head>
+
+<body>
+    <div>
+        <form action="">
+            <label for="Password">Password</label>
+            <input type="password" id="password" placeholder="Password">
+            <span onclick="toggleEye()" style="cursor:pointer;">👁️</span>
+
+            <!-- JavaScript logic -->
+            <script>
+                function toggleEye() {
+                    var p = document.getElementById("password");
+                    p.type = p.type === "password" ? "text" : "password";
+                }
+            </script>
+
+        </form>
+    </div>
+</body>
+
+</html>

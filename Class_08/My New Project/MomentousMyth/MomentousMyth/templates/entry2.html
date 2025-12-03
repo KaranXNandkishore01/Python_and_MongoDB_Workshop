@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entry2</title>
+</head>
+<body>
+    <h1>Entry form2</h1>
+    <h1>Display list manually</h1>
+    <p>{{ list1.0}}</p>
+    <p>{{ list1.1}}</p>
+    <p>{{ list1.2}}</p>
+    <p>{{ list1.3}}</p>
+    <p>{{ list1.4}}</p>
+
+    <h1>Display list data by loop</h1>
+    {% for x in list1 %}
+    <p>{{x}}</p>
+    {% endfor %}
+
+</body>
+</html>
