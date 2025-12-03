@@ -1,0 +1,27 @@
+#container
+{
+    width: 50%;
+    margin: auto;
+    border: 2px solid black;
+    padding: 10px;
+    background-color: rgb(82, 11, 11);
+    color: white    ;
+}
+#content
+{
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+#main
+{
+    text-align: center;
+    padding: 20px;
+
+}
+#sidebar
+{
+    float: right;
+    width: 30%;
+    background-color: #00a584;
+    padding: 10px;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Manipulation Methods Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background: #f0f8ff;
+    }
+    h2 {
+      color: #333;
+    }
+    button {
+      margin: 5px;
+      padding: 10px 15px;
+      background: #4ab6f5;
+      border: none;
+      border-radius: 6px;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #007acc;
+    }
+    #demo-area {
+      margin-top: 20px;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <h2 id="heading">DOM Manipulation Example</h2>
+  <p class="info">This is a paragraph.</p>
+  <div id="demo-area">
+    <p id="p1">This is paragraph 1</p>
+  </div>
+
+  <button onclick="accessElements()">1️⃣ Access Elements</button>
+  <button onclick="modifyElements()">2️⃣ Modify Elements</button>
+  <button onclick="createElements()">3️⃣ Create Elements</button>
+  <button onclick="replaceElements()">4️⃣ Replace Elements</button>
+  <button onclick="removeElements()">5️⃣ Remove Elements</button>
+  <button onclick="addEvents()">6️⃣ Add Event Listener</button>
+
+  <script>
+    // 1️⃣ ACCESS ELEMENTS
+    function accessElements() {
+      let byId = document.getElementById("heading");
+      let byClass = document.getElementsByClassName("info")[0];
+      let byTag = document.getElementsByTagName("p")[0];
+      let byQuery = document.querySelector("#demo-area p");
+      let byQueryAll = document.querySelectorAll("p");
+
+      alert("Accessed Elements:\n" +
+        "By ID: " + byId.innerText + "\n" +
+        "By Class: " + byClass.innerText + "\n" +
+        "By Tag: " + byTag.innerText + "\n" +
+        "By QuerySelector: " + byQuery.innerText + "\n" +
+        "Total <p> elements: " + byQueryAll.length);
+    }
+
+    // 2️⃣ MODIFY ELEMENTS
+    function modifyElements() {
+      let heading = document.getElementById("heading");
+      heading.innerText = "Text Changed using innerText!";
+      heading.style.color = "blue";
+      heading.setAttribute("title", "Heading Changed");
+
+      let info = document.querySelector(".info");
+      info.innerHTML = "<b>Modified HTML content using innerHTML!</b>";
+    }
+
+    // 3️⃣ CREATE & ADD ELEMENTS
+    function createElements() {
+      let div = document.getElementById("demo-area");
+      let newPara = document.createElement("p");
+      newPara.innerText = "✅ New Paragraph Added!";
+      newPara.style.color = "green";
+
+      div.appendChild(newPara); // Add to end
+
+      let anotherPara = document.createElement("p");
+      anotherPara.innerText = "⚡ Added at the beginning!";
+      anotherPara.style.color = "orange";
+      div.prepend(anotherPara); // Add to beginning
+    }
+
+    // 4️⃣ REPLACE ELEMENTS
+    function replaceElements() {
+      let div = document.getElementById("demo-area");
+      let oldPara = document.getElementById("p1");
+      let newPara = document.createElement("p");
+      newPara.innerText = "🔁 This replaced the first paragraph.";
+      newPara.style.color = "purple";
+
+      div.replaceChild(newPara, oldPara);
+    }
+
+    // 5️⃣ REMOVE ELEMENTS
+    function removeElements() {
+      let paras = document.querySelectorAll("#demo-area p");
+      if (paras.length > 0) {
+        paras[0].remove(); // removes first paragraph
+        alert("Removed one paragraph!");
+      } else {
+        alert("No paragraph left to remove!");
+      }
+    }
+
+    // 6️⃣ EVENT HANDLING
+    function addEvents() {
+      let btn = document.createElement("button");
+      btn.innerText = "Click Me (Added with JS)";
+      document.body.appendChild(btn);
+
+      btn.addEventListener("click", function() {
+        alert("🎉 Event Listener Working!");
+        btn.style.background = "green";
+      });
+    }
+  </script>
+
+</body>
+</html>

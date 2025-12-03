@@ -1,0 +1,48 @@
+body{
+    background-color: rgb(59, 76, 70);
+    color: rgb(0, 0, 0);
+}
+form
+{
+    background-color: rgb(149, 174, 168);
+    border-radius: 12px;
+    box-shadow: inset black;
+    margin:35px;
+    padding-bottom: 80%;
+    padding: 5%;
+}
+label
+{
+    color: rgb(23, 18, 18);
+}
+h1
+{
+    color: rgb(9, 111, 92);
+    margin-left: 200px;
+    text-shadow: 3px rgb(25, 61, 56) ;
+}
+input
+{
+   border: 1px solid rgb(9, 9, 85);
+   border-radius: 2px;
+}
+input:hover{
+    background-color:rgb(31, 137, 139);
+    color: antiquewhite;
+}
+
+button{
+    background-color: rgb(31, 137, 139);
+    color: wheat;
+    border: solid 1px rgb(16, 15, 72);
+    border-radius: 3px;
+    margin-left: 250px;
+}
+
+button:hover{
+    background-color: rgb(168, 163, 163);
+    color: rgb(0, 0, 0);
+    border: solid 1px rgb(12, 213, 89);
+    border-radius: 0px;
+    transition: .3s ease-in-out;
+}
